@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -27,16 +28,35 @@
                                     <constraint firstAttribute="height" constant="128" id="RH4-DY-W0u"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GSB-l8-hjw">
+                                <rect key="frame" x="175" y="0.0" width="250" height="311"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-VD-Sfu">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="111"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="gbP-Dd-NEp">
+                                        <rect key="frame" x="0.0" y="111" width="250" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="lJN-gM-42f"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3Gl-iL-gh7"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nab-O3-OgB" secondAttribute="bottom" id="4rw-FT-kcE"/>
+                            <constraint firstItem="GSB-l8-hjw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Wbi-0N-Xli"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="0r0-4i-Ko6" secondAttribute="bottom" id="bfa-3f-5DV"/>
                             <constraint firstAttribute="trailing" secondItem="nab-O3-OgB" secondAttribute="trailing" id="iJ2-Yw-Ayv"/>
                             <constraint firstAttribute="trailing" secondItem="0r0-4i-Ko6" secondAttribute="trailing" id="ja2-AQ-Tph"/>
                             <constraint firstItem="0r0-4i-Ko6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="lsK-II-tPN"/>
                             <constraint firstItem="0r0-4i-Ko6" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="qj0-xc-mXa"/>
                             <constraint firstItem="nab-O3-OgB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="sKq-Fi-6bL"/>
+                            <constraint firstItem="GSB-l8-hjw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uqH-9Q-c5y"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -46,7 +66,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Retro-Calc" width="755" height="111"/>
         <image name="launchbg" width="1433" height="957"/>
         <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
     </resources>
 </document>
