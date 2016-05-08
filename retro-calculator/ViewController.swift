@@ -74,6 +74,10 @@ class ViewController: UIViewController {
         processOperation(currentOperation)
     }
     
+    @IBAction func onClearPressed(sender: AnyObject) {
+        //reset app
+    }
+    
     func processOperation(op: Operation) {
         playSound()
         
